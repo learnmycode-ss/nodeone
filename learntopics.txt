@@ -1,0 +1,138 @@
+1. Fundamentals of Express.js
+Introduction to Express.js (What is Express? Why use it?)
+
+Setting up an Express.js project (npm init, installing Express)
+
+Basic server creation (app.listen(), app.get())
+
+Understanding middleware (app.use())
+
+Routing basics (app.get(), app.post(), app.put(), app.delete())
+
+2. Routing & HTTP Methods
+Route parameters (/users/:id)
+
+Query parameters (/search?q=express)
+
+Handling different HTTP methods (GET, POST, PUT, DELETE, PATCH)
+
+Route chaining (app.route())
+
+Organizing routes with express.Router()
+
+3. Middleware in Depth
+What is middleware? (Request-response cycle)
+
+Built-in middleware (express.json(), express.urlencoded())
+
+Third-party middleware (morgan, helmet, cors)
+
+Writing custom middleware
+
+Error-handling middleware (next(err), app.use(err, req, res, next))
+
+4. Request & Response Handling
+Accessing request data (req.params, req.query, req.body)
+
+Sending responses (res.send(), res.json(), res.status())
+
+Redirects & downloads (res.redirect(), res.download())
+
+Setting headers & cookies (res.set(), res.cookie())
+
+5. Templating Engines (Server-Side Rendering)
+Using EJS, Pug (Jade), or Handlebars
+
+Passing data to views (res.render())
+
+Layouts & partials (reusable components)
+
+6. Working with Databases
+Connecting to databases:
+
+SQL (PostgreSQL, MySQL with pg or mysql2)
+
+NoSQL (MongoDB with mongoose)
+
+Performing CRUD operations
+
+Using ORMs/ODMs (Sequelize for SQL, Mongoose for MongoDB)
+
+7. Authentication & Security
+Session-based auth (express-session)
+
+JWT (JSON Web Tokens) authentication
+
+OAuth (Google, Facebook login with passport.js)
+
+Security best practices:
+
+Helmet.js (HTTP headers)
+
+CSRF protection (csurf)
+
+Rate limiting (express-rate-limit)
+
+Input sanitization (express-validator)
+
+8. RESTful API Development
+Designing RESTful routes
+
+Versioning APIs (/api/v1/users)
+
+Handling CORS (cors middleware)
+
+API documentation with Swagger/OpenAPI
+
+9. File Uploads & Static Files
+Handling file uploads (multer)
+
+Serving static files (express.static())
+
+Cloud storage (AWS S3, Firebase Storage)
+
+10. Testing Express Applications
+Unit testing with Jest or Mocha
+
+Integration testing with supertest
+
+Mocking databases & APIs
+
+11. Deployment & Performance
+Environment variables (dotenv)
+
+Logging (winston, morgan)
+
+Process managers (PM2)
+
+Deployment to:
+
+Heroku
+
+AWS (EC2, Lambda)
+
+Vercel / Render
+
+Caching strategies (redis)
+
+Load balancing & scaling
+
+12. Advanced Topics
+WebSockets with Socket.io
+
+GraphQL APIs with Apollo Server or express-graphql
+
+Microservices architecture
+
+Serverless Express (AWS Lambda)
+
+13. Project Ideas for Practice
+Todo API (CRUD operations)
+
+Blog App (with user authentication)
+
+E-commerce API (products, cart, orders)
+
+Chat App (using Socket.io)
+
+Weather App (fetching external APIs)
