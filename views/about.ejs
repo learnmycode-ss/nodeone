@@ -1,0 +1,59 @@
+<%-include('common/header')%>
+
+      <!-- start container -->
+      <div class="contetn-wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <article class="post post-entry">
+                <div class="entry-head align-center">
+                  <h2 class="title">About</h2>
+                </div>
+                <div class="entry-content-wrap">
+                  <div class="entry-content">
+                    <!--kg-card-begin: markdown-->
+                  <%-data.content%>
+                    <!--kg-card-end: markdown-->
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <aside class="sidebar">
+                <!-- start tag widget -->
+                <div class="widget">
+                  <h4 class="widget-title align-center">About Me</h4>
+                  <div class="content about-me align-center">
+                    <div class="align-center">
+                      <img
+                        src="../assets/images/author6ff7.jpg?v=bbebdd0e00"
+                        alt="profile picture"
+                        class="profile-pic"
+                      />
+                    </div>
+                    <h4 class="name"><%=about.name%></h4>
+                    <div class="position"><%=about.title%></div>
+                    <div class="description">
+                      <%=about.description%>
+                    </div>
+                    <ul class="social">
+                      <li>
+                        <a href="<%=about.social.twiter%>"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="<%=about.social.facebook%>"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="<%=about.social.instragram%>"><i class="fa fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="<%=about.social.linkedin%>"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end tag widget -->
+                <!-- start tag widget -->
+               
+
+      <%- include('common/footer') %>
