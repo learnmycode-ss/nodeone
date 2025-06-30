@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Tag</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      max-width: 600px;
+      margin: auto;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    .back-link {
+      display: block;
+      margin-top: 20px;
+      color: #007bff;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Edit Tag</h2>
+
+  <form id="editTagForm" action="/tags/update">
+    <input type="hidden" name="id" value="<%=tag._id%>" /> <!-- Simulate tag ID -->
+    <label for="tagName">Tag Name:</label>
+    <input type="text" id="tagName" name="tagName" value="<%=tag.name%>" required />
+
+    <label for="tagLink">Tag Link:</label>
+    <input type="text" id="tagLink" name="tagLink" value="<%=tag.link%>" required />
+
+    <button type="submit">Update Tag</button>
+  </form>
+
+  <a href="/tags" class="back-link">← Back to Tags List</a>
+
+</body>

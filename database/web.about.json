@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "6862309ea1b2ca1bec6c4bd0"
+  },
+  "name": "Sharad Savaliya",
+  "title": "Software Developer",
+  "description": "I am a software developer with a passion for creating innovative solutions.",
+  "social": {
+    "twiter": "https://x.com/sharad__patel_",
+    "linkedin": "https://www.linkedin.com/in/savaliya-sharad/",
+    "github": "https://github.com/learnmycode-ss",
+    "facebook": "https://www.facebook.com/sharad.savaliya.1",
+    "instragram": "https://www.instagram.com/sharad14f/"
+  }
+}]

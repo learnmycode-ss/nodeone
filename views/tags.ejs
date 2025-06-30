@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tags Table</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+      .action-dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-btn {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 100px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: #333;
+        padding: 8px 10px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+      .action-dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Tags Management</h2>
+    <a href="/insert" style="
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 15px;
+  border-radius: 5px;
+">+ Add New Tag</a>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Tag Name</th>
+          <th>Tag Link</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%tags.map((tag)=>{%>
+        <tr>
+          <td><%=tag._id%></td>
+          <td><%=tag.name%></td>
+          <td><%=tag.link%></td>
+          <td>
+            <div class="action-dropdown">
+              <button class="dropdown-btn">Actions</button>
+              <div class="dropdown-content">
+                <a href="/tags/edit/<%=tag._id%>">Edit</a>
+                <a href="/tags/delete/<%=tag._id%>">Delete</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <%})%>
+      </tbody>
+    </table>
+  </body>
+</html>
