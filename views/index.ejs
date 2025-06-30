@@ -1,0 +1,275 @@
+
+<%-include('common/header')%>
+      <!-- start container -->
+      <div class="contetn-wrap">
+        <div class="container">
+          <!-- start slider -->
+          <div
+            class="owl-carousel owl-theme featured-slider"
+            id="featured-slider-one"
+          >
+            <div
+              class="featured-post-wrap post-entry align-center"
+              style="
+                background-image: url(content/images/2016/09/pocket-watch.jpg);
+              "
+            >
+              <div class="inner-wrap">
+                <div class="post-content-wrap">
+                  <div class="post-entry">
+                    <div class="entry-head">
+                      <div class="post-categories">
+                        <div class="tag-list">
+                          <a href="tag/travel/index.html">Travel</a>
+                        </div>
+                      </div>
+                      <h2 class="title">
+                        <a href="time-passes-faster-than-you-thik/index.html"
+                          >Time Passes Faster Than You Thik</a
+                        >
+                      </h2>
+                      <div class="post-meta">
+                        <span class="author"
+                          ><a href="author/biswajit/index.html"
+                            >Biswajit Saha</a
+                          ></span
+                        >
+                        --
+                        <span class="date"
+                          ><a href="time-passes-faster-than-you-thik/index.html"
+                            >September 13, 2016</a
+                          ></span
+                        >
+                        --
+                        <span class="read-time">1 minute read</span>
+                      </div>
+                    </div>
+                    <div class="entry-permalink">
+                      <a
+                        href="time-passes-faster-than-you-thik/index.html"
+                        class="btn btn-primary"
+                        >Continue Reading</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="featured-post-wrap post-entry align-center"
+              style="background-image: url(content/images/2016/09/sidewalk.jpg)"
+            >
+              <div class="inner-wrap">
+                <div class="post-content-wrap">
+                  <div class="post-entry">
+                    <div class="entry-head">
+                      <div class="post-categories">
+                        <div class="tag-list">
+                          <a href="tag/lifestyle/index.html">Lifestyle</a
+                          ><a href="tag/travel/index.html">Travel</a>
+                        </div>
+                      </div>
+                      <h2 class="title">
+                        <a
+                          href="an-unforgettable-road-trip-this-summer/index.html"
+                          >An Unforgettable Road Trip, This Summer</a
+                        >
+                      </h2>
+                      <div class="post-meta">
+                        <span class="author"
+                          ><a href="author/biswajit/index.html"
+                            >Biswajit Saha</a
+                          ></span
+                        >
+                        --
+                        <span class="date"
+                          ><a
+                            href="an-unforgettable-road-trip-this-summer/index.html"
+                            >September 13, 2016</a
+                          ></span
+                        >
+                        --
+                        <span class="read-time">1 minute read</span>
+                      </div>
+                    </div>
+                    <div class="entry-permalink">
+                      <a
+                        href="an-unforgettable-road-trip-this-summer/index.html"
+                        class="btn btn-primary"
+                        >Continue Reading</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="featured-post-wrap post-entry align-center"
+              style="
+                background-image: url(content/images/2016/09/Abandoned-Factory.jpg);
+              "
+            >
+              <div class="inner-wrap">
+                <div class="post-content-wrap">
+                  <div class="post-entry">
+                    <div class="entry-head">
+                      <h2 class="title">
+                        <a href="the-history-of-an-abandoned-factory/index.html"
+                          >The History of An Abandoned Factory</a
+                        >
+                      </h2>
+                      <div class="post-meta">
+                        <span class="author"
+                          ><a href="author/biswajit/index.html"
+                            >Biswajit Saha</a
+                          ></span
+                        >
+                        --
+                        <span class="date"
+                          ><a
+                            href="the-history-of-an-abandoned-factory/index.html"
+                            >September 12, 2016</a
+                          ></span
+                        >
+                        --
+                        <span class="read-time">1 minute read</span>
+                      </div>
+                    </div>
+                    <div class="entry-permalink">
+                      <a
+                        href="the-history-of-an-abandoned-factory/index.html"
+                        class="btn btn-primary"
+                        >Continue Reading</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end slider -->
+          <div class="row">
+            <div class="col-md-8">
+                <%blog.map((i)=>{%>
+              <article class="post post-entry">
+                <div class="entry-head align-center">
+                  <div class="post-categories">
+                    <div class="tag-list">
+                      <a href="tag/travel/index.html"><%=i.category%></a>
+                    </div>
+                  </div>
+                  <h2 class="title">
+                    <a href="one-week-in-arambol-beach/index.html"
+                      ><%=i.title%></a
+                    >
+                  </h2>
+                  <div class="post-meta">
+                    <span class="author"
+                      ><a href="author/biswajit/index.html"
+                        ><%=i.author%></a
+                      ></span
+                    >
+                    --
+                    <span class="date"
+                      ><a href="one-week-in-arambol-beach/index.html"
+                        ><%=i.date%></a
+                      ></span
+                    >
+                    --
+                    <span class="read-time">4 minute read</span>
+                  </div>
+                </div>
+                <div class="featured-media align-center">
+                  <a href="one-week-in-arambol-beach/index.html"
+                    ><img
+                      src="content/images/2016/09/poster.jpg"
+                      alt="One Week in Arambol Beach"
+                  /></a>
+                </div>
+                <div class="entry-content-wrap">
+                  <div class="entry-content">
+                    <p>
+                      <%=i.content%>
+                    </p>
+                  </div>
+                  <div class="entry-permalink align-center">
+                    <a
+                      href="one-week-in-arambol-beach/index.html"
+                      class="btn btn-primary"
+                      >Continue Reading</a>
+                  </div>
+                  <div class="entry-footer">
+                    <div class="row">
+                      <div class="col-xs-6 left-half">
+                        <span class="comment">
+                          <a
+                            href="one-week-in-arambol-beach/index.html#disqus_thread"
+                            ><%=i.comment_count%></a
+                          >
+                        </span>
+                      </div>
+                      <div class="col-xs-6 right-half">
+                        <span class="share">
+                          <a
+                            href="#"
+                            data-url="https://borsha.gbjsolution.com/one-week-in-arambol-beach/"
+                            data-title="One%20Week%20in%20Arambol%20Beach"
+                            data-toggle="modal"
+                            data-target="#sharemodal"
+                            ><i class="fa fa-share-alt"></i
+                          ></a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <%})%>
+
+              <!-- start pagination -->
+              <div class="pagination-wrap clearfix" role="navigation">
+                <a class="older-posts pull-right" href="page/2/index.html"
+                  ><span>Older</span>
+                  <i class="fa fa-long-arrow-right fa-fw"></i
+                ></a>
+              </div>
+              <!-- end pagination -->
+            </div>
+            <div class="col-md-4">
+              <aside class="sidebar">
+                <!-- start tag widget -->
+                <div class="widget">
+                  <h4 class="widget-title align-center">About Me</h4>
+                  <div class="content about-me align-center">
+                    <div class="align-center">
+                      <img
+                        src="assets/images/author6ff7.jpg?v=bbebdd0e00"
+                        alt="profile picture"
+                        class="profile-pic"
+                      />
+                    </div>
+                    <h4 class="name"><%=about.name%></h4>
+                    <div class="position"><%=about.title%></div>
+                    <div class="description">
+                     <%=about.description%>
+                    </div>
+                    <ul class="social">
+                      <li>
+                        <a href="<%=about.social.twiter%>"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="<%=about.social.facebook%>"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="<%=about.social.instragram%>"><i class="fa fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="<%=about.social.linkedin%>"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end tag widget -->
+              
+
+ <%-include('common/footer')%> 

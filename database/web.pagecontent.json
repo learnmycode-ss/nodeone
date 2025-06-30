@@ -1,0 +1,7 @@
+[{
+  "_id": {
+    "$oid": "68624fb2a1b2ca1bec6c4bd4"
+  },
+  "page": "about",
+  "content": "<p><strong>Borsha</strong> is a minimal and reader friendly theme for <a href=\"http://ghost.org/\">Ghost</a> blogging platform. it is designed focusing content in mind. So that visitor and reader can concentrate in your article. There is no clutter and over bloating unnecessary element throughout the design.</p><p>This theme handles rich media like image, video and audio in a nice way. An code highlighter is also included in this theme for those people who write code block and coding tutorial.</p><p>Also in this theme there is a very simple but powerful inbuilt feature which allow you to use any embedded media like <strong>YouTube video, Vimeo video, Sound cloud audio, Mix cloud audio or any other embedded iframe as your featured / or cover media to your post or static page.</strong> Oh! also embedded <strong>google map</strong> can be used at the place of featured media. Working example of google map is on the <a href=\"../contact/index.html\">contact</a> page.</p><p>So If you are going to start a new site and looking for a nice ghost theme for your magazine, multi-author blog, journal or personal blog, <strong>Borsha</strong> will perfectly fit in your need.</p><p>We will keep updating this theme time to time. If you find any bug or want a feature in a future version please let me know. Will try best to solve / add those in future version.</p>"
+}]
